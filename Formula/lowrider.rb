@@ -12,7 +12,7 @@ class Lowrider < Formula
             installer_script = "helm.sh"
             bin.install installer_script
             exec("#{prefix}/bin/#{installer_script}")
-         
+            system "chmod", "+x", "#{prefix}/bin/#{installer_script}"
                         # # Move everything under #{libexec}/
                         # libexec.install Dir["*"]
                         # # Then write executables under #{bin}/
