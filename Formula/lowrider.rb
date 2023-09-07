@@ -2,7 +2,7 @@ class Lowrider < Formula
     # ...
     desc "Schema registry"
     homepage "https://github.com/vrahmanov"
-    version "0.0.1"
+    version "0.0.2"
     on_macos do
         if Hardware::CPU.arm?
           url "https://raw.githubusercontent.com/vrahmanov/dantidote/main/helm.sh"
