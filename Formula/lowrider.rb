@@ -14,7 +14,7 @@ class Lowrider < Formula
             # exec("#{prefix}/bin/#{installer_script}")
             system "chmod", "+x", "#{prefix}/bin/#{installer_script}"
             # system "alias", "lowrider" ,"=", "#{prefix}/bin/#{installer_script}"
-            bin.install_symlink /opt/homebrew/Cellar/lowrider/0.0.1/bin/helm.sh/"lowrider"
+            bin.install_symlink "lowrider" /opt/homebrew/Cellar/lowrider/0.0.1/bin/helm.sh
             # alias lowrider="/opt/homebrew/Cellar/lowrider/0.0.1/bin/helm.sh"
                         # # Move everything under #{libexec}/
                         # libexec.install Dir["*"]
