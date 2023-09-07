@@ -13,6 +13,8 @@ class Lowrider < Formula
             bin.install installer_script
             # exec("#{prefix}/bin/#{installer_script}")
             system "chmod", "+x", "#{prefix}/bin/#{installer_script}"
+            system "alias", "lowrider=", "#{prefix}/bin/#{installer_script}"
+            # alias lowrider="/opt/homebrew/Cellar/lowrider/0.0.1/bin/helm.sh"
                         # # Move everything under #{libexec}/
                         # libexec.install Dir["*"]
                         # # Then write executables under #{bin}/
