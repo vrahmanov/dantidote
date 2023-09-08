@@ -1,5 +1,5 @@
 
-class Lowrider < Formula
+class 50Cheat < Formula
     # ...
     desc "50Cheat"
     homepage "https://github.com/vrahmanov"
