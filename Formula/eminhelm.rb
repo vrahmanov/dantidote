@@ -1,4 +1,4 @@
-class Lowrider < Formula
+class Eminhelm < Formula
   # ...
   desc "Schema registry"
   homepage "https://github.com/vrahmanov"
