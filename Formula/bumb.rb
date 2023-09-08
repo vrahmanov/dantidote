@@ -1,22 +1,22 @@
 
-class Fcheat < Formula
+class Bumb < Formula
     # ...
-    desc "50Cheat"
+    desc "BackUp my brew"
     homepage "https://github.com/vrahmanov"
     version "0.0.2"
-    desc "A small tap 🐐 using cheats.sh"
+    desc "A small tap 🐐 backing up your brew to ~/BUMBBrewfile"
     # head "https://github.com/vrahmanov/dantidote.git", branch: "main" # the default is "master"
     on_macos do
         if Hardware::CPU.arm?
-          url "https://raw.githubusercontent.com/vrahmanov/dantidote/main/50cheat.sh"
+          url "https://raw.githubusercontent.com/vrahmanov/dantidote/main/bumb.sh"
           def install
             puts "inside install"
-            puts "A small tap 🐐 using cheats.sh"
+            puts "A small tap 🐐 backing up your brew to ~/BUMBBrewfile"
             puts %x(whoami)
-            installer_script = "50cheat.sh"
+            installer_script = "bumb.sh"
             bin.install installer_script
             system "chmod", "+x", "#{prefix}/bin/#{installer_script}"
-            bin.install_symlink "#{prefix}/bin/#{installer_script}" => "50cheat"
+            bin.install_symlink "#{prefix}/bin/#{installer_script}" => "bumb"
           end
         end
       end
