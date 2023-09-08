@@ -1,4 +1,8 @@
 class Eminhelm < Formula
+  depends_on "yq"
+  depends_on "helm"
+  depends_on "git"
+  depends_on "jq"
   # ...
   homepage "https://github.com/vrahmanov"
   version "0.0.2"

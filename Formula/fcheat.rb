@@ -1,5 +1,6 @@
 
 class Fcheat < Formula
+    depends_on "curl"
     # ...
     desc "50Cheat"
     homepage "https://github.com/vrahmanov"
