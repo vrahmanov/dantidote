@@ -1,5 +1,5 @@
 
-class 50Cheat < Formula
+class FCheat < Formula
     # ...
     desc "50Cheat"
     homepage "https://github.com/vrahmanov"
