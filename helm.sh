@@ -5,7 +5,7 @@
     whoami
     printf "\n======= Generic Current Location Info =======\n"
     pwd
-       printf "\n======= Generic Hostname Info =======\n"
+    printf "\n======= Generic Hostname Info =======\n"
     hostname
     printf "\n======= Generic Public IP Info =======\n"
     curl ipinfo.io/ip

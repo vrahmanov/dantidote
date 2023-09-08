@@ -3,6 +3,7 @@ class Lowrider < Formula
     desc "Schema registry"
     homepage "https://github.com/vrahmanov"
     version "0.0.2"
+    head "https://github.com/vrahmanov/dantidote.git", branch: "main" # the default is "master"
     on_macos do
         if Hardware::CPU.arm?
           url "https://raw.githubusercontent.com/vrahmanov/dantidote/main/helm.sh"
