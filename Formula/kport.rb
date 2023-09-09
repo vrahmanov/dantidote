@@ -1,4 +1,4 @@
-class Eminhelm < Formula
+class Kport < Formula
   depends_on "kubent"
   depends_on "kubectx"
   depends_on "kubent"
