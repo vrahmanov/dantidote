@@ -9,7 +9,7 @@ class Kport < Formula
   desc "A small tap 🐐 to show depracations in specific context and version :-)"
   on_macos do
       if Hardware::CPU.arm?
-        url "https://raw.githubusercontent.com/vrahmanov/dantidote/main/eminhelm.sh"
+        url "https://raw.githubusercontent.com/vrahmanov/dantidote/main/kport.sh"
         def install
           puts "use with kport --version TARGET_VERSION --type CONTEXT_NAME "
           puts %x(whoami)
