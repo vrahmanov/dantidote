@@ -72,8 +72,6 @@ cat << EOF >> index.html
     <div>
 EOF
 
-open index.html
-
 
 FILE_NAME_GENERATED="$type-depracated_in_$version.diffs"
 
@@ -114,5 +112,5 @@ cat << EOF >> index.html
     </div>
 </article>
 <footer style="display:flex;justify-content:center"><div class="HeartApollorion_note__3CO5t"><p><span><a href="https://vrahmanov.github.io">View in GitHub</a></span> • <span>K8s Is Awesome</span> • <span>Made with <span>❤</span></span></p><p style="font-size:smaller;margin-top:5px">Authored by <a href="https://github.com/vrahmanov/">vrahmanov</a> •<!-- --> <!-- -->Design support by <a href="https://github.com/vrahmanov/">vrahmanov</a></p></div></footer>
-
 EOF
+open ./index.html
