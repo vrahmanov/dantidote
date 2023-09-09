@@ -5,9 +5,9 @@
 # INFOR: THIS CODE WILL LOOP OVER ALL KUBE CONTEXT SET IN USER 
 # -------------------------------------------------
 # minimum requirement
-
+echo "creating a temp folder"
+mkdir -p kport-tmp && cd kport-tmp
 rm index.html || echo "couldnt find index.html"
-
 function check_requirements
 {
 
@@ -53,7 +53,7 @@ for i in $(kubectx);do
 	fi
 done
 }
-
+echo "im at 60% "
 
 cat << EOF >> index.html
 <!doctype html>
@@ -68,10 +68,11 @@ cat << EOF >> index.html
 </style>
 <meta http-equiv="refresh" content="3">
 <article>
-    <h1><img src="https://www.enterprisestorageforum.com/wp-content/uploads/2022/07/Kubernetes-logo-icon.png" alt="Image A"/> VRahmanov - kubernethes depracations list in $version</h1>
+    <h1><img src="https://www.enterprisestorageforum.com/wp-content/uploads/2022/07/Kubernetes-logo-icon.png" alt="Image A"/> kubernethes depracations list in $version</h1>
     <div>
 EOF
 
+echo "im at 70% "
 
 FILE_NAME_GENERATED="$type-depracated_in_$version.diffs"
 
@@ -99,7 +100,7 @@ for i in $(kubectx);do
 	fi
 done
 }
-
+echo "im at 90% "
 
 rm $FILE_NAME_GENERATED || echo "couldnt find $FILE_NAME_GENERATED "
 
@@ -108,9 +109,11 @@ cat << EOF >> index.html
 		<p></p>
 		<p></p>
 		<p></p>
-        <p>&mdash; with </p>
     </div>
 </article>
-<footer style="display:flex;justify-content:center"><div class="HeartApollorion_note__3CO5t"><p><span><a href="https://vrahmanov.github.io">View in GitHub</a></span> • <span>K8s Is Awesome</span> • <span>Made with <span>❤</span></span></p><p style="font-size:smaller;margin-top:5px">Authored by <a href="https://github.com/vrahmanov/">vrahmanov</a> •<!-- --> <!-- -->Design support by <a href="https://github.com/vrahmanov/">vrahmanov</a></p></div></footer>
+<footer style="display:flex;justify-content:center"><div class="HeartApollorion_note__3CO5t"><p><span><a href="https://vrahmanov.github.io">View in GitHub</a></span> • <span>K8s Is Awesome</span> • <span>Made with <span>❤</span></span></p>
+<p style="font-size:smaller;margin-top:5px">Authored by <a href="https://github.com/vrahmanov/">vrahmanov</a></p>
+<p style="font-size:smaller;margin-top:5px">Design support by FREAKING GOOGLE 10th search page, literally hate html !!!</p></div></footer>
 EOF
+echo "done"
 open ./index.html
